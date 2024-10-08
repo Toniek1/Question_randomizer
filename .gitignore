@@ -8,6 +8,7 @@ __pycache__/
 # Ignore virtual environment directories
 venv/
 .env/
+.venv/
 *.venv
 
 # Ignore compiled Java files
@@ -61,4 +62,6 @@ build/
 P.xlsx
 
 *.spec
+*.pdf
+*.docx
 
