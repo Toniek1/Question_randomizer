@@ -1,0 +1,62 @@
+# Ignore node_modules directory (for JavaScript/Node.js projects)
+node_modules/
+
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment directories
+venv/
+.env/
+
+# Ignore compiled Java files
+*.class
+
+# Ignore database files
+*.sqlite3
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore log files
+*.log
+
+# Ignore system-specific files
+Thumbs.db
+desktop.ini
+
+# Ignore IDE/editor-specific files (for VSCode)
+.vscode/
+
+# Ignore compiled object files
+*.o
+*.so
+
+# Ignore test coverage results
+coverage/
+
+# Ignore compiled CSS from Sass or Less
+*.sass-cache/
+*.scss-cache/
+
+# Ignore build outputs
+dist/
+build/
+
+# Ignore environment-specific configuration files
+.env
+*.env
+
+# Ignore temporary files and backups
+*.tmp
+*.bak
+*.swp
+
+# Ignore specific data outputs
+*.csv
+*.json
+
+# Ignore file with questions from Konrad
+P.xlsx
+
+*.spec

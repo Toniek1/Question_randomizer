@@ -1,6 +1,9 @@
 import pandas as pd
 import random
 from fpdf import FPDF
+import os
+
+font_path = os.path.join(os.path.dirname(__file__), 'fonts', 'DejaVuSans.ttf')
 
 # 0# Prerequisite(
 questions_file = input("Podaj nazwę pliku z pytaniami wraz z rozszerzeniem (np. pytania.xlsx): ")
@@ -44,12 +47,11 @@ def export_questions_to_pdf(questions, output_file):
     pdf = FPDF()
     pdf.set_auto_page_break(auto=True, margin=15)
     pdf.add_page()
-    pdf.add_font('DejaVu', '', 'DejaVuSans.ttf', uni=True)  # Pobierz i załaduj czcionkę
+    pdf.add_font('DejaVu', '', font_path , uni=True)  #Download and add load font
 
 
     
     # Add title
-    #pdf.set_font("DejaVuSans-Bold", 'B', 16)
     pdf.set_font("DejaVu", size=16)
     pdf.cell(200, 10, txt=test_title, ln=True, align='C')
     pdf.ln(10)
